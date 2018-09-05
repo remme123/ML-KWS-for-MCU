@@ -23,10 +23,31 @@
 #include "kws_ds_cnn.h"
 #include "wav_data.h"
 
-int16_t audio_buffer[16000]=WAVE_DATA;
+extern "C" {
+	extern void *ll_malloc(size_t xSize);
 
-Timer T;
-Serial pc(USBTX, USBRX);
+int kws_inference(int16_t *data)
+{
+  char output_class[12][8] = {"Silence", "Unknown","yes","no","up","down","left","right","on","off","stop","go"};
+
+  KWS_DS_CNN kws(data);
+  kws.extract_features(); 
+  kws.classify();
+  int max_ind = kws.get_top_class(kws.output);
+  printf("Detected %s (%d%%)\r\n",output_class[max_ind],((int)kws.output[max_ind]*100/128));
+
+  return 0;
+}
+
+}
+
+void * operator new(size_t size)
+{
+	return ll_malloc(size);
+}
+
+#if 0
+int16_t audio_buffer[16000]=WAVE_DATA;
 
 int main()
 {
@@ -45,3 +66,4 @@ int main()
 
   return 0;
 }
+#endif

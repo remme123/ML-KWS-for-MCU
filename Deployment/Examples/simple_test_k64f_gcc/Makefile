@@ -46,72 +46,72 @@ PROJECT := simple_test_k64f_gcc
 ###############################################################################
 # Objects and Paths
 
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/PeripheralPins.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/analogin_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/analogout_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/crc.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/dma_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/flash_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_adc16.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_clock.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_clock_config.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_cmp.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_cmt.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_common.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_crc.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dac.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dmamux.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dspi.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dspi_edma.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_edma.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_enet.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_ewm.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_flash.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_flexbus.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_flexcan.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_ftm.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_gpio.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_i2c.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_i2c_edma.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_llwu.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_lptmr.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_mpu.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_pdb.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_phy.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_pit.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_pmc.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_rcm.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_rnga.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_rtc.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sai.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sai_edma.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sdhc.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sim.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_smc.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_uart.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_uart_edma.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_vref.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_wdog.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/gpio_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/gpio_irq_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/i2c_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/lp_ticker.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_board.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_overrides.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_retarget.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/pinmap.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/port_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/pwmout_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/rtc_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/serial_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/sleep.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/spi_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/startup_MK64F12.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/storage_driver.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/system_MK64F12.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/trng_api.o
- SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/us_ticker.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/PeripheralPins.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/analogin_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/analogout_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/crc.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/dma_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/flash_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_adc16.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_clock.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_clock_config.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_cmp.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_cmt.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_common.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_crc.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dac.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dmamux.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dspi.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_dspi_edma.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_edma.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_enet.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_ewm.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_flash.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_flexbus.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_flexcan.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_ftm.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_gpio.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_i2c.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_i2c_edma.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_llwu.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_lptmr.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_mpu.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_pdb.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_phy.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_pit.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_pmc.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_rcm.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_rnga.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_rtc.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sai.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sai_edma.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sdhc.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_sim.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_smc.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_uart.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_uart_edma.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_vref.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/fsl_wdog.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/gpio_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/gpio_irq_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/i2c_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/lp_ticker.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_board.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_overrides.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_retarget.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/mbed_sdk_boot.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/pinmap.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/port_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/pwmout_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/rtc_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/serial_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/sleep.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/spi_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/startup_MK64F12.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/storage_driver.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/system_MK64F12.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/trng_api.o
+ #SYS_OBJECTS += mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/us_ticker.o
 
 OBJECTS += ./simple_test/main.o
 OBJECTS += ./CMSIS_5/CMSIS/DSP/Source/TransformFunctions/arm_bitreversal2.o
@@ -453,19 +453,19 @@ INCLUDE_PATHS += -I../mbed/hal
 INCLUDE_PATHS += -I../mbed/platform
 
 LIBRARY_PATHS := -L../mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM 
-LIBRARIES := -lmbed 
+#LIBRARIES := -lmbed 
 LINKER_SCRIPT ?= ../mbed/TARGET_K64F/TOOLCHAIN_GCC_ARM/MK64FN1M0xxx12.ld
 
 # Objects and Paths
 ###############################################################################
 # Tools and Flags
 
-AS      = 'arm-none-eabi-gcc' '-x' 'assembler-with-cpp' '-c' '-Wall' '-Wextra' '-Wno-unused-parameter' '-Wno-missing-field-initializers' '-fmessage-length=0' '-fno-exceptions' '-fno-builtin' '-ffunction-sections' '-fdata-sections' '-funsigned-char' '-MMD' '-fno-delete-null-pointer-checks' '-fomit-frame-pointer' '-O3' '-g1' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=softfp'
-CC      = 'arm-none-eabi-gcc' '-std=gnu99' '-c' '-Wall' '-Wextra' '-Wno-unused-parameter' '-Wno-missing-field-initializers' '-fmessage-length=0' '-fno-exceptions' '-fno-builtin' '-ffunction-sections' '-fdata-sections' '-funsigned-char' '-MMD' '-fno-delete-null-pointer-checks' '-fomit-frame-pointer' '-O3' '-g1' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=softfp'
-CPP     = 'arm-none-eabi-g++' '-std=gnu++98' '-fno-rtti' '-Wvla' '-c' '-Wall' '-Wextra' '-Wno-unused-parameter' '-Wno-missing-field-initializers' '-fmessage-length=0' '-fno-exceptions' '-fno-builtin' '-ffunction-sections' '-fdata-sections' '-funsigned-char' '-MMD' '-fno-delete-null-pointer-checks' '-fomit-frame-pointer' '-O3' '-g1' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=softfp'
+AS      = 'arm-none-eabi-gcc' '-x' 'assembler-with-cpp' '-c' '-Wall' '-Wextra' '-Wno-unused-parameter' '-Wno-missing-field-initializers' '-fmessage-length=0' '-fno-exceptions' '-fno-builtin' '-ffunction-sections' '-fdata-sections' '-funsigned-char' '-MMD' '-fno-delete-null-pointer-checks' '-fomit-frame-pointer' '-O3' '-g1' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard'
+CC      = 'arm-none-eabi-gcc' '-std=gnu99' '-c' '-Wall' '-Wextra' '-Wno-unused-parameter' '-Wno-missing-field-initializers' '-fmessage-length=0' '-fno-exceptions' '-fno-builtin' '-ffunction-sections' '-fdata-sections' '-funsigned-char' '-MMD' '-fno-delete-null-pointer-checks' '-fomit-frame-pointer' '-O3' '-g1' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard'
+CPP     = 'arm-none-eabi-g++' '-std=gnu++98' '-fno-rtti' '-Wvla' '-c' '-Wall' '-Wextra' '-Wno-unused-parameter' '-Wno-missing-field-initializers' '-fmessage-length=0' '-fno-exceptions' '-fno-builtin' '-ffunction-sections' '-fdata-sections' '-funsigned-char' '-MMD' '-fno-delete-null-pointer-checks' '-fomit-frame-pointer' '-O3' '-g1' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard'
 LD      = 'arm-none-eabi-gcc'
 ELF2BIN = 'arm-none-eabi-objcopy'
-PREPROC = 'arm-none-eabi-cpp' '-E' '-P' '-Wl,--gc-sections' '-Wl,--wrap,main' '-Wl,--wrap,_malloc_r' '-Wl,--wrap,_free_r' '-Wl,--wrap,_realloc_r' '-Wl,--wrap,_memalign_r' '-Wl,--wrap,_calloc_r' '-Wl,--wrap,exit' '-Wl,--wrap,atexit' '-Wl,-n' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=softfp'
+PREPROC = 'arm-none-eabi-cpp' '-E' '-P' '-Wl,--gc-sections' '-Wl,--wrap,main' '-Wl,--wrap,_malloc_r' '-Wl,--wrap,_free_r' '-Wl,--wrap,_realloc_r' '-Wl,--wrap,_memalign_r' '-Wl,--wrap,_calloc_r' '-Wl,--wrap,exit' '-Wl,--wrap,atexit' '-Wl,-n' '-mcpu=cortex-m4' '-mthumb' '-mfpu=fpv4-sp-d16' '-mfloat-abi=hard'
 
 
 C_FLAGS += -std=gnu99
@@ -609,8 +609,8 @@ ASM_FLAGS += -I../mbed/hal
 ASM_FLAGS += -I../mbed/platform
 
 
-LD_FLAGS :=-Wl,--gc-sections -Wl,--wrap,main -Wl,--wrap,_malloc_r -Wl,--wrap,_free_r -Wl,--wrap,_realloc_r -Wl,--wrap,_memalign_r -Wl,--wrap,_calloc_r -Wl,--wrap,exit -Wl,--wrap,atexit -Wl,-n -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=softfp 
-LD_SYS_LIBS :=-Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -lmbed -Wl,--end-group
+LD_FLAGS :=-Wl,--gc-sections -Wl,--wrap,main -Wl,--wrap,_malloc_r -Wl,--wrap,_free_r -Wl,--wrap,_realloc_r -Wl,--wrap,_memalign_r -Wl,--wrap,_calloc_r -Wl,--wrap,exit -Wl,--wrap,atexit -Wl,-n -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard 
+LD_SYS_LIBS :=-Wl,--start-group -lstdc++ -lsupc++ -lm -lc -lgcc -lnosys -Wl,--end-group
 
 # Tools and Flags
 ###############################################################################
@@ -653,10 +653,13 @@ $(PROJECT).link_script.ld: $(LINKER_SCRIPT)
 
 
 
-$(PROJECT).elf: $(OBJECTS) $(SYS_OBJECTS) $(PROJECT).link_script.ld 
+$(PROJECT).elf: libkws.a $(SYS_OBJECTS) $(PROJECT).link_script.ld 
 	+@echo "link: $(notdir $@)"
-	@$(LD) $(LD_FLAGS) -T $(filter-out %.o, $^) $(LIBRARY_PATHS) --output $@ $(filter %.o, $^) $(LIBRARIES) $(LD_SYS_LIBS)
+	@$(LD) $(LD_FLAGS) -T $(filter %.link_script.ld, $^) $(LIBRARY_PATHS) --output $@ $(filter %.o, $^) $(LIBRARIES) $(LD_SYS_LIBS)
 
+libkws.a: $(OBJECTS)
+	+@echo "AR: $(notdir $@)"
+	@ar rsc $@ $^
 
 $(PROJECT).bin: $(PROJECT).elf
 	$(ELF2BIN) -O binary $< $@
