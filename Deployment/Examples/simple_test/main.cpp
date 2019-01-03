@@ -24,17 +24,24 @@
 #include "wav_data.h"
 
 extern "C" {
-	extern void *ll_malloc(size_t xSize);
+	extern void* ll_malloc(size_t xSize);
 
 int kws_inference(int16_t *data)
 {
-  char output_class[12][8] = {"Silence", "Unknown","yes","no","up","down","left","right","on","off","stop","go"};
+  char output_class[][8] = {"Silence", "Unknown","yes","no","on","off"};
 
+  printf("start inference...\n");
   KWS_DS_CNN kws(data);
+  printf("extract feature...\n");
   kws.extract_features(); 
+  printf("classify...\n");
   kws.classify();
+  printf("get top...\n");
   int max_ind = kws.get_top_class(kws.output);
-  printf("Detected %s (%d%%)\r\n",output_class[max_ind],((int)kws.output[max_ind]*100/128));
+  if (max_ind < 0)
+	  printf("Detected nothing\n");
+  else
+	  printf("Detected %s (%d%%)\n",output_class[max_ind],((int)kws.output[max_ind]*100/128));
 
   return 0;
 }

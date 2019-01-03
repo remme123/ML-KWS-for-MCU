@@ -20,7 +20,7 @@
 #define __DS_CNN_H__
 
 #include "nn.h"
-#include "ds_cnn_weights.h"
+#include "weights.h"
 #include "local_NN.h"
 #include "arm_math.h"
 

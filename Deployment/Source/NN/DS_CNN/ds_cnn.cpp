@@ -18,26 +18,26 @@
 
 #include "ds_cnn.h"
 
-const q7_t DS_CNN::conv1_wt[CONV1_OUT_CH*CONV1_KX*CONV1_KY]=CONV1_WT;
-const q7_t DS_CNN::conv1_bias[CONV1_OUT_CH]=CONV1_BIAS;
-const q7_t DS_CNN::conv2_ds_wt[CONV1_OUT_CH*CONV2_DS_KX*CONV2_DS_KY]=CONV2_DS_WT;
-const q7_t DS_CNN::conv2_ds_bias[CONV1_OUT_CH]=CONV2_DS_BIAS;
-const q7_t DS_CNN::conv2_pw_wt[CONV2_OUT_CH*CONV1_OUT_CH]=CONV2_PW_WT;
-const q7_t DS_CNN::conv2_pw_bias[CONV2_OUT_CH]=CONV2_PW_BIAS;
-const q7_t DS_CNN::conv3_ds_wt[CONV2_OUT_CH*CONV3_DS_KX*CONV3_DS_KY]=CONV3_DS_WT;
-const q7_t DS_CNN::conv3_ds_bias[CONV2_OUT_CH]=CONV3_DS_BIAS;
-const q7_t DS_CNN::conv3_pw_wt[CONV3_OUT_CH*CONV2_OUT_CH]=CONV3_PW_WT;
-const q7_t DS_CNN::conv3_pw_bias[CONV3_OUT_CH]=CONV3_PW_BIAS;
-const q7_t DS_CNN::conv4_ds_wt[CONV3_OUT_CH*CONV4_DS_KX*CONV4_DS_KY]=CONV4_DS_WT;
-const q7_t DS_CNN::conv4_ds_bias[CONV3_OUT_CH]=CONV4_DS_BIAS;
-const q7_t DS_CNN::conv4_pw_wt[CONV4_OUT_CH*CONV3_OUT_CH]=CONV4_PW_WT;
-const q7_t DS_CNN::conv4_pw_bias[CONV4_OUT_CH]=CONV4_PW_BIAS;
-const q7_t DS_CNN::conv5_ds_wt[CONV4_OUT_CH*CONV5_DS_KX*CONV5_DS_KY]=CONV5_DS_WT;
-const q7_t DS_CNN::conv5_ds_bias[CONV4_OUT_CH]=CONV5_DS_BIAS;
-const q7_t DS_CNN::conv5_pw_wt[CONV5_OUT_CH*CONV4_OUT_CH]=CONV5_PW_WT;
-const q7_t DS_CNN::conv5_pw_bias[CONV5_OUT_CH]=CONV5_PW_BIAS;
-const q7_t DS_CNN::final_fc_wt[CONV5_OUT_CH*OUT_DIM]=FINAL_FC_WT;
-const q7_t DS_CNN::final_fc_bias[OUT_DIM]=FINAL_FC_BIAS;
+const q7_t DS_CNN::conv1_wt[CONV1_OUT_CH*CONV1_KX*CONV1_KY]          = conv_1_weights_0;
+const q7_t DS_CNN::conv1_bias[CONV1_OUT_CH]                          = conv_1_biases_0;
+const q7_t DS_CNN::conv2_ds_wt[CONV1_OUT_CH*CONV2_DS_KX*CONV2_DS_KY] = conv_ds_1_dw_conv_depthwise_weights_0;
+const q7_t DS_CNN::conv2_ds_bias[CONV1_OUT_CH]                       = conv_ds_1_dw_conv_biases_0;
+const q7_t DS_CNN::conv2_pw_wt[CONV2_OUT_CH*CONV1_OUT_CH]            = conv_ds_1_pw_conv_weights_0;
+const q7_t DS_CNN::conv2_pw_bias[CONV2_OUT_CH]                       = conv_ds_1_pw_conv_biases_0;
+const q7_t DS_CNN::conv3_ds_wt[CONV2_OUT_CH*CONV3_DS_KX*CONV3_DS_KY] = conv_ds_2_dw_conv_depthwise_weights_0;
+const q7_t DS_CNN::conv3_ds_bias[CONV2_OUT_CH]                       = conv_ds_2_dw_conv_biases_0;
+const q7_t DS_CNN::conv3_pw_wt[CONV3_OUT_CH*CONV2_OUT_CH]            = conv_ds_2_pw_conv_weights_0;
+const q7_t DS_CNN::conv3_pw_bias[CONV3_OUT_CH]                       = conv_ds_2_pw_conv_biases_0;
+const q7_t DS_CNN::conv4_ds_wt[CONV3_OUT_CH*CONV4_DS_KX*CONV4_DS_KY] = conv_ds_3_dw_conv_depthwise_weights_0;
+const q7_t DS_CNN::conv4_ds_bias[CONV3_OUT_CH]                       = conv_ds_3_dw_conv_biases_0;
+const q7_t DS_CNN::conv4_pw_wt[CONV4_OUT_CH*CONV3_OUT_CH]            = conv_ds_3_pw_conv_weights_0;
+const q7_t DS_CNN::conv4_pw_bias[CONV4_OUT_CH]                       = conv_ds_3_pw_conv_biases_0;
+const q7_t DS_CNN::conv5_ds_wt[CONV4_OUT_CH*CONV5_DS_KX*CONV5_DS_KY] = conv_ds_4_dw_conv_depthwise_weights_0;
+const q7_t DS_CNN::conv5_ds_bias[CONV4_OUT_CH]                       = conv_ds_4_dw_conv_biases_0;
+const q7_t DS_CNN::conv5_pw_wt[CONV5_OUT_CH*CONV4_OUT_CH]            = conv_ds_4_pw_conv_weights_0;
+const q7_t DS_CNN::conv5_pw_bias[CONV5_OUT_CH]                       = conv_ds_4_pw_conv_biases_0;
+const q7_t DS_CNN::final_fc_wt[CONV5_OUT_CH*OUT_DIM]                 = fc1_weights_0;
+const q7_t DS_CNN::final_fc_bias[OUT_DIM]                            = fc1_biases_0;
 
 DS_CNN::DS_CNN()
 {

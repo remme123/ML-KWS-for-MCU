@@ -103,6 +103,7 @@ def run_quant_inference(wanted_words, sample_rate, clip_duration_ms,
     dec_bits = 7-int_bits
     # convert to [-128,128) or int8
     var_values = np.round(var_values*2**dec_bits)
+    var_name = var_name[var_name.index("/")+1:]
     var_name = var_name.replace('/','_')
     var_name = var_name.replace(':','_')
     with open('weights.h','a') as f:
